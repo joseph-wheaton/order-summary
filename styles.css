@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Red Hat Display', Arial, sans-serif;
+  box-sizing: border-box;
 }
 h1 {
   color: hsl(223, 47%, 23%);
@@ -15,14 +16,12 @@ h1 {
 }
 h2 {
   font-size: 16px;
-  display: block;
-  text-align: l;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 3px;
 }
 p {
   font-size: 16px;
   color: hsl(224, 23%, 55%);
-  padding-bottom: 10px;
-  display: block;
   text-align: center;
 }
 .container {
@@ -53,38 +52,51 @@ p {
   width: 100%;
   max-width: 100%;
 }
-.content {
-  padding: 20px;
+.copy {
+  padding: 0 20px;
 }
-.plan {
-  width: 100%;
-  background-color: hsl(225, 100%, 98%);
-  border-radius: 10px;
-  padding: 15px 0;
-  text-align: center;
+.plan-container {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: hsl(225, 100%, 98%);
+  margin: 5% 5%;
+  padding: 20px;
+  border-radius: 10px;
   align-items: center;
+  box-sizing: border-box;
+  justify-content: space-evenly;
 }
 .music-icon {
-  vertical-align: middle;
-  padding-left: 20px;
-  padding-right: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
 }
-.music-icon img {
-  padding: 0 10px;
-  vertical-align: middle;
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0 20px;
 }
 .plan-price {
   color: hsl(224, 23%, 55%);
-  font-size: 16px;
   font-weight: 400;
+  margin-top: 3px;
 }
-.btn-change {
-  text-align: right;
-  margin: 0 20px;
+.change-plan {
+  margin-left: auto;
 }
-.btn-change a {
-  color: #7f7cbf;
+.change-plan a {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+.change-plan a:hover, a:focus, a:active {
+  color: #6e63dd;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 330px) {
+  .change-plan {
+  margin: 0 auto;
+  }
 }
