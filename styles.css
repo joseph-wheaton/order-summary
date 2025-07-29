@@ -95,6 +95,39 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+.btn-payment {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.btn-payment button {
+  background-color: hsl(245, 75%, 52%);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 8px  hsl(245, 75%, 52%);
+}
+.btn-payment button:hover, .btn-payment button:focus, .btn-payment button:active {
+  background-color: hsl(245, 75%, 60%);
+  box-shadow: 0 6px 12px hsl(245, 75%, 60%);
+}
+.cancel {
+  text-align: center;
+  margin: 20px;
+}
+.cancel a {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.cancel a:hover, a:focus, a:active {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
 @media screen and (max-width: 330px) {
   .change-plan {
   margin: 0 auto;
